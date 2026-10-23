@@ -39,7 +39,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="TestAPI\" />
+    <Folder Include="Api\Clients\" />
   </ItemGroup>
 
 </Project>

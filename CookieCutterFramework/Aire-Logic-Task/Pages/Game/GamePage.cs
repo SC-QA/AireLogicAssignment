@@ -89,7 +89,7 @@ namespace CookieCutterFramework.Pages.Game
                 await Task.Delay(100);
             }
 
-            Assert.That(observed.Count, Is.GreaterThan(1), "Cookie total never changed.");
+            Assert.That(observed, Has.Count.GreaterThan(1), "Cookie total never changed.");
 
             for (int i = 1; i < observed.Count; i++)
             {

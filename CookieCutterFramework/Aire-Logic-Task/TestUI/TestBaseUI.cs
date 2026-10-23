@@ -1,4 +1,4 @@
-﻿using CookieCutterFramework.Config;
+using CookieCutterFramework.Config;
 using CookieCutterFramework.Pages.Dashboard;
 using CookieCutterFramework.Pages.Game;
 using Microsoft.Playwright;

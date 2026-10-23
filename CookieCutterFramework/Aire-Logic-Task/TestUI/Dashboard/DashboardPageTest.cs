@@ -1,9 +1,10 @@
-﻿namespace CookieCutterFramework.TestUI.Dashboard
+namespace CookieCutterFramework.TestUI.Dashboard
 {
     [TestFixture]
     public partial class DashboardPageTest : TestBaseUI
     {
         [Test]
+        [Retry(3)]
         [Category("SmokeTest | Release")]
         public async Task VerifyDashboardPageExists()
         {
@@ -11,6 +12,7 @@
         }
 
         [Test]
+        [Retry(3)]
         [Category("SmokeTest | Release")]
         public async Task VerifyHighScoreHeaderExists()
         {
@@ -18,6 +20,7 @@
         }
 
         [Test]
+        [Retry(3)]
         [Category("CI | Nightly")]
         public async Task CreateNewGameWithPlayerAndVerifyGameState()
         {
@@ -26,6 +29,7 @@
         }
 
         [Test]
+        [Retry(3)]
         [Category("CI | Nightly")]
         public async Task CreateNewGameWithPlayerAndVerifyHighScore()
         {

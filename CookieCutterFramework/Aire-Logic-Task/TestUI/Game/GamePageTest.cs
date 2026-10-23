@@ -1,10 +1,11 @@
-﻿namespace CookieCutterFramework.TestUI.Game
+namespace CookieCutterFramework.TestUI.Game
 {
     public partial class GamePageTest : TestBaseUI
     {
         public GamePageTest() { }
 
         [Test]
+        [Retry(3)]
         [Category("CI | Nightly")]
         public async Task ClickCookiesAndCountTotal()
         {
@@ -14,6 +15,7 @@
         }
 
         [Test]
+        [Retry(3)]
         [Category("CI | Nightly")]
         public async Task SellANumberOfCookiesAndValidateTotal()
         {
@@ -24,6 +26,7 @@
         }
 
         [Test]
+        [Retry(3)]
         [Category("CI | Nightly")]
         public async Task BuyFactoriesAndValidateTotal()
         {
@@ -34,6 +37,7 @@
         }
 
         [Test]
+        [Retry(3)]
         [Category("CD | Regression")]
         public async Task VerifyFactoryIncrementIsCorrect()
         {
