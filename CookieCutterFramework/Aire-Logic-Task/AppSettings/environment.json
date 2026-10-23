@@ -1,4 +1,4 @@
 {
-  "Settings": {
-  }
+  "Environment": "Development" //To switch environments, set this value to either QA / Development / Staging / Production. The corresponding appsettings.{Environment}.json file will be used to load the configuration values for that environment.
 }
+

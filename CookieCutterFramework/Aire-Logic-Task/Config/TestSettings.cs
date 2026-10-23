@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CookieCutterFramework.Config
+﻿namespace CookieCutterFramework.Config
 {
-    internal class TestSettings
+    public class TestSettings
     {
+        public string BaseUrl { get; set; } = string.Empty;
+        public string Username { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
+        public bool Headed { get; set; }
     }
 }
