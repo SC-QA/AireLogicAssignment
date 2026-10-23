@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Aire_Logic_Task.TestUI.Dashboard
+namespace CookieCutterFramework.TestUI.Dashboard
 {
     internal class DashboardPageTest
     {

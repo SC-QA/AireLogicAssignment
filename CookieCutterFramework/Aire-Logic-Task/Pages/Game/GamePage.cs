@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Aire_Logic_Task.Pages.Game
+namespace CookieCutterFramework.Pages.Game
 {
     internal class GamePage
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Aire_Logic_Task.Pages.Dashboard
+namespace CookieCutterFramework.Pages.Dashboard
 {
     internal class DashboardPage
     {
