@@ -1,10 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Microsoft.Playwright;
 
-namespace Aire_Logic_Task.Pages.Base
+namespace CookieCutterFramework.Pages.Base
 {
-    internal class BasePage
+    public partial class BasePage : PageTest
     {
+        public IPage _page;
+
+        public BasePage(IPage page)
+        {
+            _page = page;
+        }
     }
 }

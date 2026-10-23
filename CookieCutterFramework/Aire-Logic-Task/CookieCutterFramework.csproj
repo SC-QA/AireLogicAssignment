@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
-    <RootNamespace>Aire_Logic_Task</RootNamespace>
+    <RootNamespace>CookieCutterFramework</RootNamespace>
     <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -11,6 +11,10 @@
 
   <ItemGroup>
     <PackageReference Include="coverlet.collector" Version="6.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.13" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="10.0.13" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="10.0.13" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.13" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.0" />
     <PackageReference Include="Microsoft.Playwright.NUnit" Version="1.52.0" />
     <PackageReference Include="NUnit" Version="4.3.2" />
@@ -19,8 +23,8 @@
   </ItemGroup>
 
 	<ItemGroup>
-		<Compile Update ="Pages\Dashboard\DashboardPage.Map.cs" DependentUpon="DashboardPage.cs" />
-		<Compile Update ="Pages\Game\GamePage.Map.cs" DependentUpon="GamePage.cs" />
+		<Compile Update="Pages\Dashboard\DashboardPage.Map.cs" DependentUpon="DashboardPage.cs" />
+		<Compile Update="Pages\Game\GamePage.Map.cs" DependentUpon="GamePage.cs" />
 	</ItemGroup>
 
   <ItemGroup>
@@ -28,6 +32,10 @@
     <Using Include="NUnit.Framework" />
     <Using Include="System.Text.RegularExpressions" />
     <Using Include="System.Threading.Tasks" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="AppSettings\*.json" CopyToOutputDirectory="PreserveNewest" TargetPath="%(Filename)%(Extension)" />
   </ItemGroup>
 
   <ItemGroup>
