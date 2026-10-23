@@ -18,6 +18,11 @@
     <PackageReference Include="NUnit3TestAdapter" Version="5.0.0" />
   </ItemGroup>
 
+	<ItemGroup>
+		<Compile Update ="Pages\Dashboard\DashboardPage.Map.cs" DependentUpon="DashboardPage.cs" />
+		<Compile Update ="Pages\Game\GamePage.Map.cs" DependentUpon="GamePage.cs" />
+	</ItemGroup>
+
   <ItemGroup>
     <Using Include="Microsoft.Playwright.NUnit" />
     <Using Include="NUnit.Framework" />
@@ -26,12 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Config\" />
-    <Folder Include="Pages\Base\" />
-    <Folder Include="Pages\Dashboard\" />
-    <Folder Include="Pages\Game\" />
     <Folder Include="TestAPI\" />
-    <Folder Include="TestUI\" />
   </ItemGroup>
 
 </Project>
