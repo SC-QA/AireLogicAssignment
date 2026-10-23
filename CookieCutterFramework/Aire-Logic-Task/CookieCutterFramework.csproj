@@ -38,8 +38,4 @@
     <None Update="AppSettings\*.json" CopyToOutputDirectory="PreserveNewest" TargetPath="%(Filename)%(Extension)" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Api\Clients\" />
-  </ItemGroup>
-
 </Project>
