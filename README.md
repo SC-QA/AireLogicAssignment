@@ -1,6 +1,6 @@
-# AireLogicAssignment
+# Aire Logic Assignment
 
-A lightweight C# automation framework for validating Cookie Clicker through both **UI** and **API** test coverage (a total of 8 tests).  
+A lightweight C# automation framework utilising the Playwright library and NUnit Test Explorer for validating Cookie Clicker through both **UI** and **API** test coverage (a total of 8 tests).  
 The framework is designed for readability, maintainability, and scalable test growth.
 
 ## Framework Overview
