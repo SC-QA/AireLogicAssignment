@@ -4,7 +4,7 @@ A lightweight C# automation framework utilising the Playwright library and NUnit
 
 ## Framework Overview
 
-This project follows the **Page Object Model (POM)** design pattern for UI automation and a structured service-flow approach for API validation.
+This project follows the **Page Object Model (POM)** design pattern for UI automation and a structured service-flow approach for API validation. It incorporates a config accessor that allows the user to change testing environments through the modification of one config parameter, rather than changing every variable individually.
 
 ### UI Automation (POM)
 With POM, page-specific locators and interactions are encapsulated in Page classes, while tests focus on behaviour and assertions.  
